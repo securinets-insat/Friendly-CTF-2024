@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
 int main() {
     printf("Enter serial key: ");
@@ -67,7 +69,20 @@ int main() {
         }
     }
 
-    int all_conditions_true = (condition1 == 30) && condition2 && condition3 && condition4 && condition5 && condition6;
+    int condition7 = 0;
+    char fourth_group[4];
+    fourth_group[0] = serial_key[9];
+    fourth_group[1] = serial_key[10];
+    fourth_group[2] = serial_key[11];
+    fourth_group[3] = '\0';
+
+    int fourth_group_number = atoi(fourth_group);
+
+    if (sqrt(fourth_group_number) == 27) {
+        condition7 = 1;
+    }
+
+    int all_conditions_true = (condition1 == 30) && condition2 && condition3 && condition4 && condition5 && condition6 && condition7;
 
     if(all_conditions_true) {
         printf("Securinets{%s}\n", serial_key);
