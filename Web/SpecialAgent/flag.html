@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Secret Intelligence Service - Access Denied</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        nav {
+            margin-top: 3rem;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav img {
+            max-width: 700px;
+        }
+        #main {
+            color: red;
+            padding-top: 3rem;
+            text-align: center;
+        }
+        #flag {
+            display: none;
+            color: green;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <h1>Secret Intelligence Service</h1>
+        <img src="https://via.placeholder.com/700x400?text=Top+Secret+Image" alt="Top Secret Image" />
+    </nav>
+    <div id="main">
+        <p>Welcome to the SIS portal. Your access level is sufficient to view this content.</p>
+        <section class="container">
+            <img src="https://via.placeholder.com/600x400?text=Classified+Information" alt="Classified Information" />
+            <button onclick="showFlag()">Reveal Flag</button>
+            <h3 id="flag">securinets{h34d3r5-h0ld5-v4lu4bl3-1nf05}</h3>
+        </section>
+    </div>
+    <script>
+        function showFlag() {
+            const flag = document.getElementById("flag");
+            flag.style.display = "block";
+        }
+    </script>
+</body>
+</html>

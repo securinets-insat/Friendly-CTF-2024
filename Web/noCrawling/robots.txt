@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /fakeRoute
+
+User-agent: *
+Allow: /
+
+Securinets{Web_Crawlers_cant_Get_Me}   
