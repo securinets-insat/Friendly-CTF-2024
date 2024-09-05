@@ -59,7 +59,15 @@ int main() {
         condition5 = 1;
     }
 
-    int all_conditions_true = (condition1 == 30) && condition2 && condition3 && condition4 && condition5;
+    int condition6 = 1;
+    for (i = 0; i < condition1; i++) {
+        if (serial_key[i] == '0') {
+            condition6 = 0;
+            break;
+        }
+    }
+
+    int all_conditions_true = (condition1 == 30) && condition2 && condition3 && condition4 && condition5 && condition6;
 
     if(all_conditions_true) {
         printf("Securinets{%s}\n", serial_key);
