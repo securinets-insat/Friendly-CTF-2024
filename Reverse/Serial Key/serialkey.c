@@ -69,7 +69,7 @@ int main()
         sum_all_digits += (serial_key[i] - '0');
     }
 
-    if (sum_all_digits == 163)
+    if (sum_all_digits == 134)
     {
         condition4 = 1;
     }
@@ -104,29 +104,17 @@ int main()
         condition7 = 1;
     }
 
-    int condition8 = 0;
-    char whatever_group[4];
-    whatever_group[0] = serial_key[21];
-    whatever_group[1] = serial_key[22];
-    whatever_group[2] = serial_key[23];
-    whatever_group[3] = '\0';
-
-    int whatever_group_number = atoi(whatever_group);
-
-    if (prime(whatever_group_number))
-    {
-        condition8 = 1;
-    }
-
     char third_group[4];
     third_group[0] = serial_key[6];
     third_group[1] = serial_key[7];
     third_group[2] = serial_key[8];
     third_group[3] = '\0';
 
-    int condition9 = strncmp(third_group, "698", 3) == 0;
+    int condition8 = strncmp(third_group, "698", 3) == 0;
 
-    int all_conditions_true = (condition1 == 30) && condition2 && condition3 && condition4 && condition5 && condition6 && condition7 && condition8 && condition9;
+    int condition9 = (serial_key[12] - '0') < (serial_key[13] - '0') < (serial_key[14] - '0') < (serial_key[15] - '0');
+
+    int all_conditions_true = (condition1 == 24) && condition2 && condition3 && condition4 && condition5 && condition6 && condition7 && condition8 && condition9;
 
     if (all_conditions_true)
     {
