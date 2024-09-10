@@ -1,0 +1,14 @@
+what is the source ip ?
+192.168.0.3
+what is the destination ip ?
+140.82.121.3
+what is the domain name associated with the destination IP ?
+github.com
+what is the source MAC address ?
+f4:6a:dd:81:ff:1b
+what is the destination MAC address ?
+34:ba:9a:7f:05:d3
+what is the network protocol used ?
+ICMP
+What data is sent with the request ?
+2cd8a1287515ee8adcbef114419c59b22cd8a1287515ee8adcbef114419c59b22cd8a1287515ee8a
