@@ -1,0 +1,11 @@
+Securinets{U_g0t_y0u8_lOaN_Br0Ki3}
+
+for the next challenges :
+	you should play the gdb challenges in the reverse engineering category 
+	if you didnt :
+		1- install gdb (with a good extension) withthis command:
+			sudo apt-get install libc6-dbg gdb valgrind 
+		2- install this good extension with command :
+			bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+
+	now go play them

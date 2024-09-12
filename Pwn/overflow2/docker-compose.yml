@@ -1,0 +1,17 @@
+version: '3'
+services:
+  overflow2:
+    build: .
+    ports:
+      - 5007:10001
+    read_only: true
+    cap_drop:
+      - all
+              
+    restart: on-failure
+
+    deploy:
+        resources:
+            limits:
+              cpus: '0.2'
+              memory: 1000M
