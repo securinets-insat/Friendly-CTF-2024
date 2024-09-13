@@ -1,0 +1,4 @@
+Disallow: /flag875274.txt
+
+User-agent: *
+Allow: /

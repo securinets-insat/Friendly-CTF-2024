@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(black,red,black);
+    color: white;
+    font-size: larger;
+}
+
+/* you are close but still we need to defend against crawlers */
