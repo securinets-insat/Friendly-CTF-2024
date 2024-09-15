@@ -1,0 +1,10 @@
+
+Securinets{Sh3ll_m45T3r}
+
+quick heads up for all future challenges :
+	1-your aim is to reach the ' system("/bin/sh") ' and then look for the flag on the server just like this challenge
+	2- or reach the part ' system("cat flag.txt") ' and it will be printed automatically .
+	3- for every challenge , if you want to try it locally (meaning after downloading the files on your linux machine) create a fake flag for testing with this command : echo Securinets{fake_flag} > flag.txt
+
+conclusion : try to reach the part where it prints the flag , if you manage to do it locally then go ahead and do the same remotely with the 'nc ipaddress port ' command provided with the challenge
+

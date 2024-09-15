@@ -1,0 +1,2 @@
+Securinets{little_endian_is_too_weird_}
+check this "https://embetronicx.com/tutorials/p_language/c/little-endian-and-big-endian/"
