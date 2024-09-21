@@ -1,10 +1,6 @@
-FROM php:alpine
-# Used php 8.3.11
+FROM php:8.3-apache
 
-RUN apk add --no-cache \
-    php-fileinfo \
-    php-mysqli \
-    php-openssl
+RUN a2enmod rewrite
 
 RUN mkdir /var/www/html/uploads
 
@@ -17,10 +13,8 @@ RUN chown -R root:www-data /var/www/html /flag.txt && \
     chmod -R 730 /var/www/html/uploads && \
     chmod 740 /flag.txt 
 
-# RUN echo "disable_functions = exec,passthru,shell_exec,system,unlink" >> /usr/local/etc/php/conf.d/disable_functions.ini
-
 EXPOSE 80
 
 USER www-data
 
-CMD ["php", "-S", "0.0.0.0:80", "-t", "/var/www/html"]
+CMD ["apache2-foreground"]

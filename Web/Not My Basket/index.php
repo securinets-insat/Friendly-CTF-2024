@@ -213,7 +213,7 @@ $item_id = $_GET['id'] ?? null;
     </style>
 </head>
 <body>
-    <h1>Welcome to the Modern CTF Shop</h1>
+    <h1>Welcome to the Cool Stuff Shop</h1>
     <?php
     switch ($action) {
         case 'buy':
