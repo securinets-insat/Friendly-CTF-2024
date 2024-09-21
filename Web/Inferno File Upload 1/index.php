@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             left: 0;
             width: 100%;
             height: 100%;
-            background: url("/public/images/Flame-bg.gif") center / cover no-repeat;
+            background: url("/public/images/Flame-bg1.gif") center / cover no-repeat;
             opacity: 0.5;
             z-index: -1;
         }
