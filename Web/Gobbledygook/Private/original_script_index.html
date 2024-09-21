@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gears Encryption</title>
+  <style>
+    body {
+      background: url('Gears.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Courier New', Courier, monospace;
+      color: #fff;
+      padding: 30px;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    h2, h3 {
+      color: #d4af37;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    input {
+      font-family: 'Courier New', Courier, monospace;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #d4af37;
+      border-radius: 5px;
+      background-color: #333;
+      color: #d4af37;
+      width: 100%;
+    }
+
+    button {
+      background-color: #d4af37;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: 0 4px #8c8c8c;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    button:active {
+      box-shadow: 0 2px #666;
+      transform: translateY(2px);
+    }
+
+    p {
+      font-family: 'Courier New', Courier, monospace;
+      color: #d4af37;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Gears Encryption</h2>
+    <h3>Here is my secret:</h3>
+    <p>NQAQBh0ZCF0SCR4GJSMzRC9EYFkEejVIZjtRNCVSQDVhOiQ+ZEZlaxo=</p>
+    <p>Can you decrypt it?</p>
+    <h3>Encrypt your own message:</h3>
+    <form id="encryptionForm">
+      <input type="text" id="userMessage" placeholder="Enter your message">
+      <button type="button" onclick="encryptUserInput()">Encrypt</button>
+      <p>Your encrypted message: <span id="encryptedMessage"></span></p>
+    </form>
+    <h3>Decrypt a message: (Base64 encoded)</h3>
+    <form id="decryptionForm">
+      <input type="text" id="encryptedMessageInput" placeholder="Enter encrypted message">
+      <input type="text" id="keyInput" placeholder="Enter XOR key">
+      <button type="button" onclick="decryptUserInput()">Decrypt</button>
+      <p>Your decrypted message: <span id="decryptedMessage"></span></p>
+    </form>
+  </div>
+    <script>
+
+      function xorEncryptDecrypt(message, key) {
+        let keyLength = key.length;
+        let result = '';
+        for (let i = 0; i < message.length; i++) {
+          result += String.fromCharCode(message.charCodeAt(i) ^ key.charCodeAt(i % keyLength));
+        }
+        return result;
+      }
+	  const df = "gefqlp4h44jy5dezz";
+
+      function encodeBase64(input) {
+        return btoa(input);
+      }
+
+      function decodeBase64(input) {
+        return atob(input);
+      }
+
+      function encryptUserInput() {
+        const message = document.getElementById('userMessage').value;
+        const encrypted = xorEncryptDecrypt(message, theThing);
+        const base64Encrypted = encodeBase64(encrypted);
+        document.getElementById('encryptedMessage').textContent = base64Encrypted;
+      }
+	  
+	  const x = "g4r68gfe68rezz";
+
+      function decryptUserInput() {
+        const base64EncryptedMessage = document.getElementById('encryptedMessageInput').value;
+        const key = document.getElementById('keyInput').value;
+        const encryptedMessage = decodeBase64(base64EncryptedMessage);
+        const decrypted = xorEncryptDecrypt(encryptedMessage, key);
+        document.getElementById('decryptedMessage').textContent = decrypted;
+      }
+	  const rf= "fessopf8fze6"
+	  const er= "fsf8ef"
+	  
+	  
+	  const theThing = getTheThing();
+
+	  
+      function getTheThing() {
+        return decodeBase64(btoa(rf+df+er+x));
+      }
+    </script>
+	<script>
+    document.getElementById('userMessage').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault(); 
+        encryptUserInput(); 
+      }
+    });
+
+    document.getElementById('encryptedMessageInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault(); 
+        decryptUserInput(); 
+      }
+    });
+
+    document.getElementById('keyInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault(); 
+        decryptUserInput(); 
+      }
+    });
+  </script>
+  </body>
+</html>

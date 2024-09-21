@@ -1,0 +1,9 @@
+
+Flag:
+Securinets{0BFU5C4T10N_1S_4N_43SY_BYP4SS}
+
+Deobfuscate the code and search for the secret key.
+
+After identifying the variable, you can get the secret key simply by typing in the console
+console.log(theThing); // or calling
+getTheThing()
