@@ -100,7 +100,9 @@ int main()
 
     int condition8 = strncmp(third_group, "698", 3) == 0;
 
-    int condition9 = (serial_key[12] - '0') < (serial_key[13] - '0') < (serial_key[14] - '0') < (serial_key[15] - '0');
+    int condition9 = (serial_key[13] - '0') == (serial_key[12] - '0') + 1 &&
+                     (serial_key[14] - '0') == (serial_key[13] - '0') + 1 &&
+                     (serial_key[15] - '0') == (serial_key[14] - '0') + 1;
 
     int all_conditions_true = (condition1 == 24) && condition2 && condition3 && condition4 && condition5 && condition6 && condition7 && condition8 && condition9;
 

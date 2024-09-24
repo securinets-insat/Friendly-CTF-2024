@@ -27,7 +27,6 @@ def check_conditions(number):
 def generate_and_check_numbers():
         for num in range(4567000, 4568000):
             if digit_sum(num) == 33:
-                print(f"Trying number: {num}")
                 if check_conditions(num):
                     print(f"Valid number found: {num}")
 
