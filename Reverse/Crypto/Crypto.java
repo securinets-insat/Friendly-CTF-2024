@@ -3,10 +3,15 @@ import java.security.*;
 
 public class Crypto {
     public static void main(String[] args) {
+        System.out.println();
+        System.out.println("== C R Y P T O ==");
+        System.out.println("-- Author: jio --");
+        System.out.println();
         System.out.println("Is this crypto or is it rev? You tell me!");
         Scanner scanner = new Scanner(System.in);
         System.out.print("Give me the flag: ");
         String input = scanner.next();
+        scanner.close();
         String part1 = "";
         String part2 = "";
         String part3 = "";
@@ -28,9 +33,9 @@ public class Crypto {
         part4 = tada(part4);
         String flag = "fe50b2772dba50891d6b66aa815010b13601031e312d2a7074302b523356PWwwdmUzfQ==";
         if((part1+part2+part3+part4).equals(flag)) {
-            System.out.println("You got it!");
+            System.out.println("You got it! +1000 AURA");
         } else {
-            System.out.println("Nope, that's not it. Try again!");
+            System.out.println("Nope, that's not it. -100 aura");
         }
     }
 
