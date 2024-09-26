@@ -5,7 +5,12 @@
 
 int main()
 {
-    printf("Enter serial key: ");
+    printf("\n");
+    printf("== S E R I A L  K E Y ==\n");
+    printf("--    Author: jio     --\n");
+    printf("\n");
+
+    printf("Enter a valid serial key: ");
     char serial_key[123];
     scanf("%123s", serial_key);
 
@@ -108,12 +113,13 @@ int main()
 
     if (all_conditions_true)
     {
-        printf("Securinets{%s}\n", serial_key);
+        printf("Correct! ^_^\n");
+        printf("Here is your flag => Securinets{%s}\n", serial_key);
         return 0;
     }
     else
     {
-        printf("Try again.\n");
+        printf("Try again. ~_~\n");
         return 1;
     }
 }

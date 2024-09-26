@@ -7,6 +7,10 @@ def get_random_consecutive_chars(input_string):
 
 flag = "Securinets{pyARMOR_1s_n0t_ez_2_CrAcK_4T_4LL!!}"
 
+print()
+print("== P Y A R M O R ==")
+print("--  Author: jio  --")
+print()
 
 print("I can only give you 3 letters at a time ¯\\_(ツ)_/¯")
 if random.randint(0, 1):

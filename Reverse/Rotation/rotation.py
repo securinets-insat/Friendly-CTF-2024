@@ -1,4 +1,9 @@
-print("Give me the flag i'll give you points :)")
+print()
+print("== R O T A T I O N ==")
+print("--   Author: jio   --")
+print()
+
+print("Give me the flag i'll give you points ;)")
 print("flag: ", end="")
 
 flag = input()
