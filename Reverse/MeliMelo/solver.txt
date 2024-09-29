@@ -1,0 +1,2 @@
+you debug with gdb, set the char to 0x74(je) in the instruction of the comparison and you continue executing 5 times
+then you have the flag encrypted in base64 printed
