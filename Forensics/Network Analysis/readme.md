@@ -1,6 +1,6 @@
 # Description
 
-My friend detected some unusual network activity and suspected data leakage. 📉 Your task is to investigate the provided PCAPNG file to identify the malicious IP address and retrieve the leaked data.
+My friend detected some unusual network activity and suspected a data leak. 📉 Your task is to investigate the provided PCAPNG file to identify the malicious IP address and retrieve the leaked data.
 
 # solver 
 craft a python script solver.py to extract data form icmp packet
