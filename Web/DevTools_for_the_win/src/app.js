@@ -14,4 +14,4 @@ if (hackerName == "anonymous") {
 
 
 
-/* hello there, very nice styiling don't you think :) */
+/* hello there, very nice styling don't you think :) */
