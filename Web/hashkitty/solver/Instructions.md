@@ -39,7 +39,7 @@ Explanation:
 - `-m 1400`: Specifies the hash type (1400 corresponds to SHA-256).
 - `hash.txt`: The file containing our target hash.
 - `/path/to/wordlist/rockyou.txt`: The path to your wordlist.
-- `--force`: Forces Hashcat to run even if there are compatibility warnings.
+- `--show`: shows the output in the CLI
 
 ### **Step 5: Analyzing the Results**
 Hashcat will attempt to match the hash in `hash.txt` against hashes of words in `rockyou.txt` using SHA-256. If successful, it will output the cracked password in the terminal.
