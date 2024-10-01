@@ -32,7 +32,7 @@ Hashcat can use a wordlist (a file with a list of potential passwords) to attemp
 Now that we have our hash and wordlist, let's run Hashcat. Open your terminal and execute the following command:
 
 ```bash
-hashcat -m 1400 hash.txt /path/to/wordlist/rockyou.txt --force
+hashcat -m 1400 hash.txt /path/to/wordlist/rockyou.txt --show
 ```
 
 Explanation:
