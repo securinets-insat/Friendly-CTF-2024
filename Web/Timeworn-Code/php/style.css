@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: red;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4vw;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 30px rgba(255, 0, 0, 0.7);
+    }
+}
+
+.watermark {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.8vw;
+    opacity: 0.7;
+}

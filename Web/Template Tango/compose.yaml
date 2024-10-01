@@ -2,5 +2,5 @@ services:
   web:
     build: .
     ports:
-      - "5009:80"
+      - "5004:5000"
 
