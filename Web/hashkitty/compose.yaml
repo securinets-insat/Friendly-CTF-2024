@@ -3,5 +3,5 @@ services:
   hash-kitty:
     build: .
     ports:
-      - "8080:80"
+      - "5014:80"
     restart: always
