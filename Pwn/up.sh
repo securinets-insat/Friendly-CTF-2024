@@ -3,8 +3,11 @@
 directories=$(find . -type d)
 if [[ -z "$@" ]] ; then
 	for directory in $directories ; do
-		echo "starting $directory"
-		docker-compose -f "$directory"/docker-compose.yml up --build -d
+		if [ "$directory" != "." ]; then
+			echo "starting $directory"
+			docker-compose -f "$directory"/docker-compose.yml up --build -d
+		fi
+
 	done
 else 
 	for directory in "$@" ; do

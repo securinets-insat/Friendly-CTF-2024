@@ -2,7 +2,7 @@ from pwn import *
 
 
 
-p=remote("localhost" , 10001)
+p=remote("localhost" , 5004)
 #p=process("./main")
 
 for i in range(0x10):

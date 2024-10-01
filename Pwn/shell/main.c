@@ -11,6 +11,6 @@ void main(){
 	puts("find the flag.txt file on the server then print it");
 
 
-	system("/bin/sh");
+	system("/bin/bash");
 
 }

@@ -1,7 +1,7 @@
 from pwn import *
 
 
-p=remote("localhost",5022)
+p=remote("localhost",10001)
 
 p.sendline("10")
 

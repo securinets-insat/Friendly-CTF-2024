@@ -1,6 +1,6 @@
 version: '3'
 services:
-  IntegerOverflow1:
+  integer_overflow:
     build: .
     ports:
       - 5005:10001
