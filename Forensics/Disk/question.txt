@@ -17,4 +17,4 @@ fedi
 9-what is the original flag found in flag.txt?
 Securinets{this_is_a_simple_annoying_malware}
 5-how long did it take for the ZIP file to be downloaded from Discord? (ms)
-9572707
+9572.707
