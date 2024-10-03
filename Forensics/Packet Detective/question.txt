@@ -11,4 +11,4 @@ what is the destination MAC address ?
 what is the network protocol used ?
 ICMP
 What data is sent with the request ?
-2cd8a1287515ee8adcbef114419c59b22cd8a1287515ee8adcbef114419c59b22cd8a1287515ee8a
+806ddf6600000000cf000800000000002cd8a1287515ee8adcbef114419c59b22cd8a1287515ee8adcbef114419c59b22cd8a1287515ee8a
