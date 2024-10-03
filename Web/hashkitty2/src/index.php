@@ -25,27 +25,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $VAR = "Invalid credentials!";
     }
 }
-?>
 
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>HashKitty</title>
     <style>
         body {
-            background-image: url('fluffytonge.jpg');
-            background-size: cover;
+            background-color: #ffb6c1; /* Pink background */
             font-family: 'Arial', sans-serif;
-            color: #333;
+            color: #000; /* Black text */
             text-align: center;
             padding-top: 100px;
         }
         
         h1 {
-            color: #ff6b6b;
+            color: #000;
             font-size: 48px;
             margin-bottom: 20px;
-            text-shadow: 2px 2px #ffe66d;
         }
         
         form {
@@ -84,12 +82,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         input[type="submit"]:hover {
             background-color: #ff4747;
         }
+
+        img {
+            width: 100px;
+            height: auto;
+            margin-top: 20px;
+        }
         
         p {
             font-size: 20px;
             font-weight: bold;
-            color: #fff;
-            text-shadow: 1px 1px #000;
         }
     </style>
 </head>
@@ -104,6 +106,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         <input type="submit" value="Login">
     </form>
+    
+    <!-- Kitty image under the form -->
+    <img src="fluffytongue.jpg" alt="Cute kitty">
+    
     <br>
     <?php
     // Display the $VAR message if it's not empty
