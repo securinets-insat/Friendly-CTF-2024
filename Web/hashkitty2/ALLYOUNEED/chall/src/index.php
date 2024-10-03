@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Concatenate the salt to the entered password
+    // Concatenate the seasoning to the entered password
     $seasoned_password = $password . $seasoning;
 
     // Hash the salted password using SHA-256
