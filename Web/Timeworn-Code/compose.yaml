@@ -11,9 +11,21 @@ services:
     volumes:
       - ./php:/var/www
       - ./nginx/nginx.conf:/etc/nginx/conf.d/site.conf
+    deploy:
+      resources:
+        limits:
+          cpus: "0.7"        # Limit to 70% of a single CPU core
+          memory: "512M"      # Limit memory usage to 512 MB
+
   php:
     image: php:7.2.10-fpm
     container_name: php
     restart: unless-stopped
     volumes:
       - ./php:/var/www
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"        # Limit to 50% of a single CPU core
+          memory: "256M"      # Limit memory usage to 256 MB
+
