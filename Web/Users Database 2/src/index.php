@@ -36,7 +36,7 @@ function basic_filter($input) {
         <?php
         if (isset($_GET['username'])) {
             $username = basic_filter($_GET['username']);
-            echo "<p>Searching for username : $username</p>";
+            echo "<p>Searching for username :".htmlspecialchars($username)."</p>";
             $query = "SELECT id, username, password FROM users WHERE username = '$username'";
             
             try {
