@@ -1,7 +1,7 @@
 1-what is the computer bame ?
 DESKTOP-4KTU8NT
 2-identify the OS build number ?
-190453
+19045
 3-how many time the user open discord.exe ?
 4
 4-time of the last run of discord.exe ? UTC+1 yyyy-mm-dd hh:mm:ss
