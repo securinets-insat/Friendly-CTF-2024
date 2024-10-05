@@ -1,0 +1,13 @@
+services:
+  james-webb-telescope:
+    build:
+      context: .
+    ports:
+      - "5020:5000"
+    environment:
+      - SECRET_KEY=batman123
+      - FLAG=j_d0ubl3_y0u_t34_15_fun
+      - PORT=5000
+    # volumes:
+    #   - .:/app
+    restart: unless-stopped
