@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  proxy:
+    image: nginx:latest
+    restart: always
+    ports:
+      - 5021:80
+    volumes:
+      - ./src:/var/www/html:ro
+      - ./proxy.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - internal
+    depends_on:
+      - bot
+  bot:
+    build:
+      context: bot
+      args:
+        - BROWSER=chromium
+    restart: always
+    environment:
+      APPNAME: Admin
+      APPURL: http://proxy
+      APPURLREGEX: ^http*
+      APPFLAG: Securinets{B3Y0ND_EZ_XSS}
+      APPLIMIT: 2
+      APPLIMITTIME: 60
+      USE_PROXY: 1
+      DISPLAY: ${DISPLAY}
+    networks:
+      - internal
+    # uncoment this if you need to run the bot in GUI mode
+    # run this before running the docker container if you're use xauth `sudo xhost +local:docker`
+    # volumes:
+      # - /tmp/.X11-unix:/tmp/.X11-unix
+
+networks:
+  internal:
