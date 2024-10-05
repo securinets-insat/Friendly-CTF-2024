@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Unvaxxed</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Emergency!</h2>
+        <p>
+            We are experiencing a technical problem at the hospital when people come in to receive the vaccine.
+            Unfortunately, our production system has crashed, and all the patients' information is lost. We
+            need to quickly insert patient data into a temporary database. Our emergency API isn't quite
+            ready yet, but we can support XML submissions. Currently, we are storing data in
+            <kbd>/patients</kbd> and <kbd>/doctors</kbd> before we integrate those into the production API.
+        </p>
+        <br />
+        <hr />
+        <div class="text-center">
+            <form id="creds" action="/submit.php" method="POST">
+                <label for="data">Patients' data</label>
+                <textarea id="data" name="data" rows="15" cols="50">
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<people>
+    <patients>
+        <patient>
+            <name>Mr. John Doe</name>
+            <age>33</age>
+        </patient>
+        etc ...
+            </textarea>
+
+                <br />
+                <button class="btn btn-primary" type="submit">Insert into temporary database</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
