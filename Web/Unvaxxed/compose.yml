@@ -1,0 +1,8 @@
+services:
+  unvaxxed:
+    build: .
+    ports:
+      - "5023:8000"
+    # volumes:
+    #   - ./src:/app
+    restart: unless-stopped
