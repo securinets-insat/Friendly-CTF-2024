@@ -1,0 +1,12 @@
+1- What is the operating system profile used for forensic analysis?
+Win7SP1x64
+2- What is the timestamp indicating the creation time of the memory dump? yyyy-mm-dd hh:mm:ss
+2024-02-12 18:27:23
+3- Which process serves as the parent process of the Firefox browser ?
+explorer.exe
+4- what is the ip of the machine
+192.168.59.130
+6- What hacking forum did the owner of the machine visit? domain.**
+raidforum.co
+7- What is the name of the DLL file that the owner of the machine downloaded?
+api-ms-win-crt-runtime-l1-1-0.dll
