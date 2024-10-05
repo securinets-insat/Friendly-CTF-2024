@@ -1,0 +1,6 @@
+services:
+  bounce:
+    build: .
+    container_name: bounce
+    ports:
+      - "5021:80"

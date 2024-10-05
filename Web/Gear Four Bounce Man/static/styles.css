@@ -1,0 +1,53 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: red;
+    animation: shift 20s linear infinite;
+}
+
+@keyframes shift {
+    to {
+        background-position: 0 -200%;
+    }
+}
+
+body,
+div,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+p,
+h1,
+button {
+    font-family: "Comic Sans MS", "Roboto", sans-serif;
+}
+
+p {
+    font-size: 14px;
+    max-width: 75%;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 24px;
+    z-index: 99;
+}
+
+* {
+    user-select: none;
+}
