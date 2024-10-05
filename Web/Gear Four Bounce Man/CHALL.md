@@ -1,0 +1,8 @@
+- Challenge name: Gear 4: Bounce Man
+- Author: m4dz
+- Description: I've prohibited you from using the browser's console.
+- Category: Web Exploitation
+- Difficulty: 1/5
+- Vulnerability: Not an actual web vuln. The player have to read the js script to get the flag.
+- Flag: SecuriNets{luffy_g34r_f0ur_15_0p}
+- Solution: Either use `accept.click()` in the browser's console, or override the `script.js` file to prevent button from moving, or copy paste the obfuscated alert(FLAG) from `analytics.js ` and run the in the console.
