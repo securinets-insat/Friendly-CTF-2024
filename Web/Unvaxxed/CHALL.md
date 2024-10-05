@@ -1,0 +1,8 @@
+- Challenge name: Unvaxxed
+- Author: m4dz
+- Description: We had an emergency at the hospital, and we need help from a nerd.
+- Category: Web Exploitation
+- Difficulty: 2/5
+- Vulnerability: XXE
+- Flag: SecuriNets{c0v1d_19_w4s_4_l13_t0_turn_us_4ll_into_t1t4ns}
+- Solution: I'll build a solver (script) soon
