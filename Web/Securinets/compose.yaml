@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5020:5000"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"       # Limit to 50% of a single CPU core
+          memory: "256M"     # Limit memory usage to 256 MB
+
