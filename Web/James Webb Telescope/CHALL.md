@@ -1,0 +1,8 @@
+- Challenge name: James Webb Telescope
+- Author: m4dz
+- Description: Our current James Webb Telescope lacks the permissions necessary to capture images of other galaxies.
+- Category: Web Exploitation
+- Difficulty: 1/5
+- Vulnerability: Sever not validating the jwt signature
+- Flag: SecuriNets{j_d0ubl3_y0u_t34_15_fun}
+- Solution: Decode the jwt token in localStorage ('token'), change role to 'admin' and submit it again.
