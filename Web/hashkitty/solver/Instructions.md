@@ -64,3 +64,7 @@ Securinets{DAyuM_S0n_WhRe'd_ya_f1Nd_tH1s}
 ## **Conclusion**
 This challenge demonstrates the importance of avoiding hardcoded credentials and properly securing sensitive information. By using tools like Hashcat, we can analyze and exploit poorly implemented security measures in web applications.
 
+
+
+# ALTERNATE SOLUTION
+just input the hash into a hash cracking website that already has a database of passwords such as https://crackstation.net/ and it will just give you the password.
