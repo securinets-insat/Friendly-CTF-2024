@@ -1,8 +1,9 @@
 <?php
 $data = $_POST['data'];
 
-// Check if the required header is set
 if (!isset($_SERVER['HTTP_MEDICAL_SERVICE']) || $_SERVER['HTTP_MEDICAL_SERVICE'] !== 'Data Entry Agent') {
+    http_response_code(401);
+    
     echo <<<HTML
 <!DOCTYPE html>
 <html lang="en">
@@ -71,6 +72,7 @@ HTML;
 
     exit();
 }
+http_response_code(400);
 
 echo <<<HTML
 <!DOCTYPE html>

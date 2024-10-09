@@ -25,10 +25,12 @@ const showFlag = async () => {
           const data = await response.json();
           alert(`SecuriNets{${data.flag}}`);
       } else {
-          alert("Internal Server Error! Try again later.");
+          console.error("Couldn't get the flag!");
+          logout();
       }
   } catch (error) {
-      alert("Internal Server Error! Try again later.");
+      console.error("Couldn't get the flag!");
+      logout();
   }
 };
 
