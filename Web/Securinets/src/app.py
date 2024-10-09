@@ -44,7 +44,7 @@ def securinet():
 
 @app.route('/S/e/c/u/r/i/n/e/t/s/')
 def securinets():
-    return "Congratulations! You have found the 'Securinets' lare <br> here is your flag : <br> Securinets{temp}!"
+    return "Congratulations! You have found the 'Securinets' lare <br> here is your flag : <br>Securinets{Uncover_the_Hidden_Directories}!"
 
 if __name__ == '__main__':
     app.run(debug=True)
