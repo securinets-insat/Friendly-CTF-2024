@@ -2,10 +2,10 @@ version: '3'
 
 services:
   proxy:
-    image: nginx:latest
+    image: nginx:stable
     restart: always
     ports:
-      - 5021:80
+      - 5024:80
     volumes:
       - ./src:/var/www/html:ro
       - ./proxy.conf:/etc/nginx/conf.d/default.conf:ro
@@ -21,7 +21,7 @@ services:
     restart: always
     environment:
       APPNAME: Admin
-      APPURL: http://proxy
+      APPURL: http://xspress.web.securinets.tn/
       APPURLREGEX: ^http*
       APPFLAG: Securinets{B3Y0ND_EZ_XSS}
       APPLIMIT: 2
