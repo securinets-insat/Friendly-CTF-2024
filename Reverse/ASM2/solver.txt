@@ -1,0 +1,7 @@
+take each part and execute it to get the output
+
+either do it manually or compile, execute with gdb and make breakpoints then inspect the value of the eax register.
+
+execute using : 
+nasm -f elf32 -o 1.asm 1.o 
+gcc -m32 -o 1.exe 1.o
