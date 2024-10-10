@@ -22,5 +22,10 @@ Resolution Unit                 : None
 X Resolution                    : 1
 Y Resolution                    : 1
 Comment                         : I hid something with this password '5bdae6bb388d42ef73570336d8babd42'. Can you see it?
+```
+<br>
+we can use this password to extract a secret with steghide
+
+```
 ╰─➤  steghide extract -sf hidden.jpeg -xf extracted_secret.txt
 ```
