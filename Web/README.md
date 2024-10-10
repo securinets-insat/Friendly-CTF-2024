@@ -45,7 +45,7 @@ and there you go you go the app running
 
 btw you can change the machine port in your compose.yaml you just need to make sure it is not reserved 
 
-ps: to kill a container after being done with it you just need to find it's `ace9b7df9d65` with 
+ps: to kill a container after being done with it you just need to find it's `CONTAINER ID` with 
 ```
 sudo docker ps
 ```
