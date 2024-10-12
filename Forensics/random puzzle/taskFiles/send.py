@@ -14,7 +14,7 @@ src_port = 25000
 
 # Use the current time as a random seed
 random.seed(floor(time.time()))
-print(time.time())
+
 
 # Read the image file and split it into chunks
 chunk_size = 1024  # Fixed chunk size
