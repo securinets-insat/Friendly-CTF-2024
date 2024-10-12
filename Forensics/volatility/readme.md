@@ -8,8 +8,9 @@ https://drive.google.com/file/d/1-0ecxz8DvicwtP3tgZXm6-wsUIFAetUG/view?usp=shari
 
 What is the MD5 hash of the memory dump?
 <br>
+![alt text](image.png)<br>
 82ecdd03876310897acf49a9ec0c2284
-![alt text](image.png)
+
 
 What is the pid of the sus process?
 <br>
@@ -33,10 +34,11 @@ we can see that the victim download Chr0me.exe from this url http://192.168.0.7:
 192.168.0.7
 
 What is the content of the secret file?
+<br>
 we can search for the secret file with this plugin
 ```
 python vol.py -f mem.vmem windows.filescan | grep secret.txt
 ```
-and then sump it
+and then dump it
 ![alt text](image-4.png)
 kesa7-rak-ya-moudir
