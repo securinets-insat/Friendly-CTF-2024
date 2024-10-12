@@ -1,0 +1,3 @@
+Looks like the killer left us every detail of the murder alongside the way. So the detective found out the weapon of murder by looking through this file he found in the futuristic device of the killer.
+Flag: Securinets{Weapon_Name}
+##### make sure to follow the form of the exemple flag 

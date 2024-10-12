@@ -1,0 +1,4 @@
+Inside a university campus, this picture was taking from a security camera on one of the buildings. what building is this security camera on?and what city is this university in?
+
+make sure to follow the form of the exemple flag
+Flag: Securinets{Building_Name_City}

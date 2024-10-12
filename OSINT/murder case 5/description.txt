@@ -1,0 +1,7 @@
+Now with everything in hand we need to look at everything we collected to find out the real truth. Everyone that heard what the real truth is were shocked to discover the identity of the real killer and the real victim.
+
+
+
+Flag: Securinets{The_real_truth}.
+
+hint: the killer knows how and where to hide.

@@ -1,0 +1,6 @@
+Now you are ready to be a detective in a real muder case. Read the tasks descriptions very well to solve the case.
+Save every flag you find in a text file because you might needed it far into the story (but not this flag).
+when writing the flags make sure that every world starts in upper case (the killer loves the first letters) and replace evry space with a"_":  
+PLEASE PLAY THEM IN THE RIGHT ORDER TO UNDERSTAND THE STORY
+
+exp: Securinets{Exemple_Flag}

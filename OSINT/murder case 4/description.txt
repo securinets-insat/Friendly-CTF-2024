@@ -1,0 +1,2 @@
+After a lot of investigation we finally found out that the killer aalready had warrents to his name. The investigation taem were shocked by the first outstanding warrent he had because one of his family members was crying at the murder scene(his ex).
+Flag: Securinets{First_Warrent_Reason}

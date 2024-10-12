@@ -1,0 +1,6 @@
+Looking through the killer's stuff the detective found his bestfriend who after investigation told them one important piece of information about the killer.
+But they would have never found his bestfriend without the use of this audio.
+(no need to talk to him u need to look at him)
+
+##### make sure to follow the form of the exemple flag 
+Flag: Securinets{The_Information}
