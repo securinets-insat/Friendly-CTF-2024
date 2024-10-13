@@ -19,7 +19,6 @@ if (x < 0):
 if (x % 24 == c):
     print("Here you go: '", chr(a[x] ^ c), "'", sep="")
     print("See you LATER")
-    exit(0)
 else:
     if (x < c):
         print("too late! goodbye ~~")

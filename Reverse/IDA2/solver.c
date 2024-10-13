@@ -31,10 +31,12 @@ void xor_decrypt(const unsigned char *input, unsigned char *output, const unsign
 }
 
 int main() {
-    const char *hex_encrypted_text = "D823D2CD2708D982C96CAFFDADF39028B875D5CB0A258485C878B399B7BE";
+    const char *hex_encrypted_text = "D8 23 D2 CD 27 08 D9 82 C9 6C AFFDADF39028B875D5CB0A258485C878B399B7BE";
     char key[KEY_LENGTH];
     const char *seed = "Securinets{s33d}";
     generate_key(key, seed);
+    printf("Key: ");
+    printf("%s\n", key);
 
     unsigned char encrypted_bytes[1024];
     unsigned char decrypted_bytes[1024];
